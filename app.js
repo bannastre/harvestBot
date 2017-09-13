@@ -13,5 +13,5 @@ app.post('/hours', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log('Example app listening on port 3000!');
+  console.log(`HarvestBot listening on port ${port}!`);
 });
