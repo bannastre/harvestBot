@@ -8,7 +8,9 @@ app.get('/', (req, res) => {
 });
 
 app.post('/hours', (req, res) => {
-  console.log('req.params: ', req.params);
+  console.log('req.query: ', req.query);
+  console.log('------HARVEST--------');
+  console.log('req: ', req);
   res.send("Got a post request... so that's good");
 });
 
