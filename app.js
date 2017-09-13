@@ -48,7 +48,7 @@ app.post('/hours', (req, res) => {
   if (validateHours(hours)) {
     request.post(options, (err, httpResponse, body) => {
       if (err) { throw err; }
-      res.send(body);
+      res.send(`Logged ${hours} hour(s) to Harvest!`);
     });
   } else {
     res.send('ERR: Please specify a legit number of hours');
